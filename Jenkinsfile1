@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Coding') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+
+        stage('Code Testing') {
+            steps {
+                echo 'Hello World Code is testing'
+            }
+        }
+
+        stage('Code Building') {
+            steps {
+                echo 'Hello World Code is building'
+            }
+        }
+
+        stage('Build  Testing') {
+            steps {
+                echo 'Hello World code is building and testing'
+            }
+        }
+
+        stage('Build Release') {
+            steps {
+                echo 'Hello World code is build and releasing'
+            }
+        }
+
+        stage('Build Deployment') {
+            steps {
+                echo 'Hello World build is deployeeing'
+            }
+        }
+
+        stage('Operation') {
+            steps {
+                echo 'Hello World code is operating'
+            }
+        }
+
+        stage('Monitoring') {
+            steps {
+                echo 'Hello World code is monitoring'
+            }
+        }
+    }
+}
