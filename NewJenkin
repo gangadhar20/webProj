@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('AWS Coding') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+
+        stage('AWS Code Testing') {
+            steps {
+                echo 'Hello World Code is testing'
+            }
+        }
+
+        stage('AWS Code Building') {
+            steps {
+                echo 'Hello World Code is building'
+            }
+        }
+
+        stage('AWS Build  Testing') {
+            steps {
+                echo 'Hello World code is building and testing'
+            }
+        }
+
+        stage('AWS Build Release') {
+            steps {
+                echo 'Hello World code is build and releasing'
+            }
+        }
+
+        stage('AWS Build Deployment') {
+            steps {
+                echo 'Hello World build is deployeeing'
+            }
+        }
+
+        stage('AWS Operation') {
+            steps {
+                echo 'Hello World code is operating'
+            }
+        }
+
+        stage('AWS Monitoring') {
+            steps {
+                echo 'Hello World code is monitoring'
+            }
+        }
+    }
+}
